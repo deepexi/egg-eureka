@@ -1,8 +1,8 @@
 # egg-eureka
 
-egg-eureka插件基于[eureka-js-client v4.4.2](https://github.com/jquatier/eureka-js-client)，帮你在eggjs下快速将应用注册到eureka server。
+egg-eureka插件基于[eureka-js-client v4.4.2](https://github.com/jquatier/eureka-js-client)，帮助你在eggjs下快速将应用注册到eureka server。
 
-## Install
+## 安装
 
 ### 通过npm仓库安装（暂不支持）
 
@@ -20,7 +20,7 @@ $ cd ${your_project_root}
 $ npm link @deepexi/egg-eureka
 ```
 
-## Usage
+## 使用
 
 ```js
 // {app_root}/config/plugin.js
@@ -30,7 +30,7 @@ exports.eureka = {
 };
 ```
 
-## Configuration
+## 配置
 
 ```js
 // {app_root}/config/config.default.js
@@ -54,16 +54,16 @@ exports.eureka = {
 };
 ```
 
-更多配置可以参考[eureka-js-client](https://github.com/jquatier/eureka-js-client);
+以上是最小配置，更多配置可以参考[eureka-js-client](https://github.com/jquatier/eureka-js-client);
 
-## Example
+## 使用示例
 
 ```js
 const instances = app.eureka.getInstancesByAppId('foo-service');
 // do something via instances info
 ```
 
-## Questions & Suggestions
+## 问题和建议
 
 empty now.
 
