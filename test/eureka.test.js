@@ -15,16 +15,11 @@ describe('test/eureka.test.js', () => {
   after(() => app.close());
   afterEach(mock.restore);
 
-  it('should GET /', () => {
+  it('should fetch instances info', () => {
     const appId = app.config.eureka.client.instance.app;
     console.log(`fetch ${appId}\'s instances info`);
     const instances = app.eureka.getInstancesByAppId(appId);
     console.log(instances);
     assert(instances.length === 1, 'should fetch instance from eureka server');
-
-    // return app.httpRequest()
-    //   .get('/')
-    //   .expect('hi, eureka')
-    //   .expect(200);
   });
 });
