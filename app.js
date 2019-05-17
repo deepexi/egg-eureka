@@ -49,8 +49,6 @@ async function creator(config, app) {
   _assert(config.instance, [ 'app', 'ipAddr', 'vipAddress', 'port' ]);
   _assert(config.server, [ 'host', 'port' ]);
 
-  app.coreLogger.info(`registry to eureka server: ${config.server.host}:${config.server.port}${config.server.servicePath}`);
-
   const cfg = {
     instance: _implementInstanceInfo(config.instance),
     eureka: config.server,
@@ -64,14 +62,15 @@ async function creator(config, app) {
   }
 
   const client = new Eureka(cfg);
+
   app.beforeStart(async () => {
-    console.log('start eureka client');
+    app.coreLogger.info(`register to eureka server: ${config.server.host}:${config.server.port}${config.server.servicePath}`);
     await asyncStart(client);
   });
 
   app.beforeClose(async () => {
     if (client) {
-      console.log('stop eureka client');
+      app.coreLogger.info('stop eureka client');
       client.stop && await client.stop();
     }
   });
