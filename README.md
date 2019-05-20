@@ -4,10 +4,10 @@ egg-eureka插件基于[eureka-js-client v4.4.2](https://github.com/jquatier/eure
 
 ## 安装
 
-### 通过npm仓库安装（暂不支持）
+### 通过npm仓库安装
 
 ```bash
-$ npm i egg-eureka --save
+$ npm i @taccisum/egg-eureka --save
 ```
 
 ### 本地安装
@@ -17,7 +17,7 @@ $ git clone http://gitlab.deepexi.top/taccisum/egg-eureka
 $ cd ./egg-eureka
 $ npm link
 $ cd ${your_project_root}
-$ npm link @deepexi/egg-eureka
+$ npm link @taccisum/egg-eureka
 ```
 
 ## 使用
@@ -26,7 +26,7 @@ $ npm link @deepexi/egg-eureka
 // {app_root}/config/plugin.js
 exports.eureka = {
   enable: true,
-  package: '@deepexi/egg-eureka',
+  package: '@taccisum/egg-eureka',
 };
 ```
 

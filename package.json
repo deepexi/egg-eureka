@@ -1,6 +1,6 @@
 {
-  "name": "@deepexi/egg-eureka",
-  "version": "1.0.0",
+  "name": "@taccisum/egg-eureka",
+  "version": "1.0.1",
   "description": "egg eureka client plugin",
   "eggPlugin": {
     "name": "eureka"
@@ -9,7 +9,9 @@
     "egg",
     "eggPlugin",
     "egg-plugin",
-    "eureka"
+    "eureka",
+    "tac",
+    "taccisum"
   ],
   "dependencies": {
     "eureka-js-client": "^4.4.2"
