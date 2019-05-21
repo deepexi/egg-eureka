@@ -1,5 +1,13 @@
 # egg-eureka
 
+[![NPM version][npm-image]][npm-url]
+[![npm download][download-image]][download-url]
+
+[npm-image]: https://img.shields.io/npm/v/@taccisum/egg-eureka.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@taccisum/egg-eureka
+[download-image]: https://img.shields.io/npm/dm/@taccisum/egg-eureka.svg?style=flat-square
+[download-url]: https://www.npmjs.com/package/@taccisum/egg-eureka
+
 egg-eureka插件基于[eureka-js-client v4.4.2](https://github.com/jquatier/eureka-js-client)，帮助你在eggjs下快速将应用注册到eureka server。
 
 ## 安装
